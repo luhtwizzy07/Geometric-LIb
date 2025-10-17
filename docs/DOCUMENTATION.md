@@ -7,7 +7,7 @@
 
 ## [circle.py](../circle.py)
 ### area(r) - площадь круга
-Принимает число r, возвращает площадь круга с радиусом r
+Принимает число r - радиус круга, возвращает площадь заданного круга
 ```
 import math
 
@@ -20,7 +20,7 @@ def area(r):
 ```
 
 ### perimeter(r) - длина окружности
-Принимает число r, возвращает длину окружности с радиусом r
+Принимает число r - радиус окружности, возвращает длину заданной окружности
 ```
 import math
 
@@ -34,7 +34,7 @@ def perimeter(r):
 
 ## [rectangle.py](../rectangle.py)
 ### area(a, b) - площадь прямоугольника
-Принимает 2 числа a и b, возвращает площадь прямоугольника со сторонами a и b
+Принимает 2 числа a и b - длины смежных сторон прямоугольника, возвращает площадь заданного прямоугольника
 ```
 def area(a, b):
     return a * b 
@@ -45,7 +45,7 @@ def area(a, b):
 ```
 
 ### perimeter(a, b) - периметр прямоугольника
-Принимает 2 числа a и b, возвращает периметр прямоугольника со сторонами a и b
+Принимает 2 числа a и b - длины смежных сторон прямоугольника, возвращает периметр заданного прямоугольника
 ```
 def perimeter(a, b):
     return 2 * (a + b)
@@ -57,7 +57,7 @@ def perimeter(a, b):
 
 ## [square.py](../square.py)
 ### area(a) - площадь квадрата
-Принимает число a, возвращает площадь квадрата со стороной a
+Принимает число a - длину стороны квадрата, возвращает площадь заданного квадрата
 ```
 def area(a):
     return a * a
@@ -68,7 +68,7 @@ def area(a):
 ```
 
 ### perimeter(a) - периметр квадрата
-Принимает число a, возвращает периметр квадрата со стороной a
+Принимает число a - длину стороны квадрата, возвращает периметр заданного квадрата
 ```
 def perimeter(a):
     return 4 * a
@@ -80,8 +80,8 @@ def perimeter(a):
 
 ## [triangle.py](../triangle.py)
 ### area(a, h) - площадь треугольника
-Принимает 2 числа a и h, возвращает площадь треугольника с основанием a 
-и высотой h, проведённой к основанию a
+Принимает 2 числа a (длина основания) и h (длина высоты, проведённой к основанию a), 
+возвращает площадь заданного треугольника
 ```
 def area(a, h):
     return a * h / 2 
@@ -92,7 +92,7 @@ def area(a, h):
 ```
 
 ### perimeter(a, b, c) - периметр треугольника
-Принимет 3 числа a, b и c, возвращает периметр треугольника со сторонами a, b и c
+Принимет 3 числа a, b и c (длины сторон треугольника), возвращает периметр заданного треугольника
 ```
 def perimeter(a, b, c):
     return a + b + c
@@ -103,23 +103,11 @@ def perimeter(a, b, c):
 ```
 
 ## История изменения проекта
-```
-* 238608d (HEAD -> new_features_501697) Fixed perimeter() in rectangle.py
-* f638044 Added triangle.py
-* 1da1ea0 Added rectangle.py
-| * 86edb1c (origin/release) L-05: Update Docs. Add user agreement info
-| * 438b89a L-05: Add user agreement
-| * 6adb962 L-03: Docs added
-| | * 3049431 (origin/feature) L-04: Add rectangle.py
-| |/  
-|/|   
-| | * b5b0fae (origin/develop) L-04: Update docs for calculate.py
-| | * d76db2a L-04: Add calculate.py
-| | * 51c40eb L-04: Doc updated for triangle
-| | * d080c78 L-04: Triangle added
-| |/  
-|/|   
-* | d078c8d (origin/main, origin/HEAD, main) L-03: Docs added
-|/  
-* 8ba9aeb L-03: Circle and square added
-```
+| Хеш коммита | Дата       | Описание изменений                                      | Автор     |
+|--------------|------------|----------------------------------------------------------|------------|
+| f799f61 | 2025-10-01 | Added documentation | Sergey Obukhov |
+| 238608d | 2025-09-30 | Fixed perimeter() in rectangle.py | Sergey Obukhov |
+| f638044 | 2025-09-30 | Added triangle.py | Sergey Obukhov |
+| 1da1ea0 | 2025-09-30 | Added rectangle.py | Sergey Obukhov |
+| d078c8d | 2021-03-04 | L-03: Docs added | smartiqa |
+| 8ba9aeb | 2021-03-04 | L-03: Circle and square added | smartiqa |
