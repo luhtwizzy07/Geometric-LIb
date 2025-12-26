@@ -12,18 +12,18 @@ class SquareTestCase(unittest.TestCase):
         res = perimeter(0)
         self.assertEqual(res, 0)
 
-    def test_valid_area(self):
+    def test_area1(self):
         res = area(2)
         self.assertEqual(res, 4)
 
-    def test_valid_perimeter(self):
+    def test_perimeter1(self):
         res = perimeter(2)
         self.assertEqual(res, 8)
 
-    def test_negative_area(self):
-        res = area(-10)
-        self.assertFalse
+    def test_area2(self):
+        res = area(10)
+        self.assertEqual(res, 100)
 
-    def test_negative_perimeter(self):
-        res = perimeter(-2)
-        self.assertFalse
+    def test_perimeter2(self):
+        res = perimeter(10)
+        self.assertEqual(res, 40)
