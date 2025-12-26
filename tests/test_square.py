@@ -2,6 +2,7 @@ import unittest
 
 from square import area
 from square import perimeter
+
 class SquareTestCase(unittest.TestCase):
     def test_zero_area(self):
         res = area(0)
